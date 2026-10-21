@@ -228,7 +228,7 @@
     }
 
     /* ==========================================================================
-       5. 16 Products Grid (SEC-020-04 - 4 Columns x 4 Rows)
+       5. 15 Products Grid (SEC-020-04 - 4 Columns x 4 Rows)
        ========================================================================== */
     .product-grid {
       display: grid;
@@ -299,6 +299,7 @@
       margin-bottom: 10px;
       padding-top: 8px;
       border-top: 0;
+      transform: translateY(-8px);
     }
 
     .card-price {
@@ -454,7 +455,7 @@
         <a class="header-action search-action" href="#search" aria-label="검색">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
         </a>
-        <a class="btn-wireframe" href="#cart" style="padding: 3px 6px;">🛒 장바구니 (1)</a>
+        <a class="header-action" href="#cart">장바구니</a>
         <a class="header-action" href="#signup">회원가입</a>
         <a class="header-action" href="#login">로그인</a>
       </div>
@@ -483,7 +484,7 @@
 
       <!-- Filter & Sort Bar (SEC-020-03) -->
       <div class="filter-sort-bar">
-        <div class="product-counter">총 <span class="product-count-number">16</span>개의 상품</div>
+        <div class="product-counter">총 <span class="product-count-number">15</span>개의 상품</div>
         <div class="filter-controls">
           <select class="select-wireframe">
             <option>추천순</option>
@@ -499,20 +500,34 @@
     </div>
 
     <!-- ============================================== -->
-    <!-- 4. 16 Products Grid (SEC-020-04 - 4 Columns x 4 Rows) -->
+    <!-- 4. 15 Products Grid (SEC-020-04 - 4 Columns x 4 Rows) -->
     <!-- ============================================== -->
-    <div class="product-grid">
-      
-      <!-- 01. Water-light 1 -->
+        <div class="product-grid">
+      <!-- 01. PREP -->
       <div class="product-card">
         <div class="box-placeholder card-media">이미지</div>
         <div class="card-body">
-          <div class="card-category">Water-light</div>
-          <div class="card-title">하이드라 수분 밀착 플루이드</div>
-          <div class="card-specs">밀착 0.02mm · 24시간 보습 지속</div>
+          <div class="card-category">PREP</div>
+          <div class="card-title">하이드라 프렙 세럼</div>
+          <div class="card-specs">#수분케어 #피부컨디셔닝 #밀착준비</div>
+          <div class="card-price-row">
+            <div class="card-price">32,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 02. PREP -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">PREP</div>
+          <div class="card-title">스킨 블러 프라이머</div>
+          <div class="card-specs">#모공요철블러 #소프트내추럴 #피부유연화</div>
           <div class="card-price-row">
             <div class="card-price">28,000원</div>
-            <span class="sample-tag">샘플동봉</span>
           </div>
           <div class="card-btn-group">
             <div class="btn-wireframe">장바구니</div>
@@ -520,17 +535,31 @@
           </div>
         </div>
       </div>
-
-      <!-- 02. Water-light 2 -->
+      <!-- 03. PREP -->
       <div class="product-card">
         <div class="box-placeholder card-media">이미지</div>
         <div class="card-body">
-          <div class="card-category">Water-light</div>
-          <div class="card-title">쿨링 카밍 수분 플루이드</div>
-          <div class="card-specs">피부온도 -3.5℃ 강하 · 통기 99.1%</div>
+          <div class="card-category">PREP</div>
+          <div class="card-title">글로우 프렙 밤</div>
+          <div class="card-specs">#국소보습광채 #쉬어듀이 #자연스러운윤광</div>
+          <div class="card-price-row">
+            <div class="card-price">28,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 04. PREP -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">PREP</div>
+          <div class="card-title">프렙 앤 픽스 미스트</div>
+          <div class="card-specs">#메이크업밀착 #초미세워터세럼 #수분진정</div>
           <div class="card-price-row">
             <div class="card-price">26,000원</div>
-            <span class="sample-tag">샘플동봉</span>
           </div>
           <div class="card-btn-group">
             <div class="btn-wireframe">장바구니</div>
@@ -538,89 +567,15 @@
           </div>
         </div>
       </div>
-
-      <!-- 03. Water-light 3 -->
+      <!-- 05. BASE -->
       <div class="product-card">
         <div class="box-placeholder card-media">이미지</div>
         <div class="card-body">
-          <div class="card-category">Water-light</div>
-          <div class="card-title">딥 하이드라 오일프리 플루이드</div>
-          <div class="card-specs">속건조 케어 · 36시간 수분 락킹</div>
-          <div class="card-price-row">
-            <div class="card-price">29,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 04. Water-light 4 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Water-light</div>
-          <div class="card-title">비타 글로우 세럼 플루이드</div>
-          <div class="card-specs">순수 비타민C 10% · 투명 결 개선</div>
-          <div class="card-price-row">
-            <div class="card-price">32,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 05. Water-light 5 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Water-light</div>
-          <div class="card-title">시카 수딩 베리어 플루이드</div>
-          <div class="card-specs">병풀 추출물 85% · 진정 지수 96%</div>
-          <div class="card-price-row">
-            <div class="card-price">27,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 06. Melting Balm 1 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Melting Balm</div>
-          <div class="card-title">베리어 멜팅 리페어 밤</div>
-          <div class="card-specs">5중 세라마이드 · 모니터 앞 당김 방지</div>
-          <div class="card-price-row">
-            <div class="card-price">34,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 07. Melting Balm 2 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Melting Balm</div>
-          <div class="card-title">오버나이트 멜팅 슬리핑 밤</div>
-          <div class="card-specs">밤샘 과제 후 리셋 · 영양 밀착 코팅</div>
+          <div class="card-category">BASE</div>
+          <div class="card-title">세럼 스킨 틴트</div>
+          <div class="card-specs">#파데프리 #SPF50+PA++++ #내추럴스킨</div>
           <div class="card-price-row">
             <div class="card-price">36,000원</div>
-            <span class="sample-tag">샘플동봉</span>
           </div>
           <div class="card-btn-group">
             <div class="btn-wireframe">장바구니</div>
@@ -628,35 +583,15 @@
           </div>
         </div>
       </div>
-
-      <!-- 08. Melting Balm 3 -->
+      <!-- 06. BASE -->
       <div class="product-card">
         <div class="box-placeholder card-media">이미지</div>
         <div class="card-body">
-          <div class="card-category">Melting Balm</div>
-          <div class="card-title">립 앤 치크 멜팅 모이스처 밤</div>
-          <div class="card-specs">자연스러운 생기 · 식물성 오일 코팅</div>
-          <div class="card-price-row">
-            <div class="card-price">22,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 09. Melting Balm 4 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Melting Balm</div>
-          <div class="card-title">세라 펩타이드 멜팅 밤</div>
-          <div class="card-specs">탄력 강화 코팅 · 0.03mm 초밀착</div>
+          <div class="card-category">BASE</div>
+          <div class="card-title">스킨 베일 쿠션</div>
+          <div class="card-specs">#에센스쿠션 #SPF40+PA++++ #내추럴새틴</div>
           <div class="card-price-row">
             <div class="card-price">38,000원</div>
-            <span class="sample-tag">샘플동봉</span>
           </div>
           <div class="card-btn-group">
             <div class="btn-wireframe">장바구니</div>
@@ -664,125 +599,15 @@
           </div>
         </div>
       </div>
-
-      <!-- 10. Melting Balm 5 -->
+      <!-- 07. BASE -->
       <div class="product-card">
         <div class="box-placeholder card-media">이미지</div>
         <div class="card-body">
-          <div class="card-category">Melting Balm</div>
-          <div class="card-title">소프트 버터 멜팅 원스텝 밤</div>
-          <div class="card-specs">원스텝 클렌징 · 세안 후 당김 0%</div>
-          <div class="card-price-row">
-            <div class="card-price">25,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 11. Tinted Fluid 1 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Tinted Fluid</div>
-          <div class="card-title">누드 스킨 틴티드 01 라이트</div>
-          <div class="card-specs">투명 톤업 보정 · 통기성 지수 98.4%</div>
-          <div class="card-price-row">
-            <div class="card-price">32,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 12. Tinted Fluid 2 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Tinted Fluid</div>
-          <div class="card-title">누드 스킨 틴티드 02 내추럴</div>
-          <div class="card-specs">자연스러운 균일 톤 · 답답함 제로</div>
-          <div class="card-price-row">
-            <div class="card-price">32,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 13. Tinted Fluid 3 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Tinted Fluid</div>
-          <div class="card-title">포어 블러링 틴티드 세럼</div>
-          <div class="card-specs">요철 커버 · 피지 컨트롤 8시간</div>
-          <div class="card-price-row">
-            <div class="card-price">31,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 14. Tinted Fluid 4 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Tinted Fluid</div>
-          <div class="card-title">글로우 선 틴티드 프로텍터</div>
-          <div class="card-specs">SPF50+ PA++++ · 백탁 없는 유리알 결</div>
-          <div class="card-price-row">
-            <div class="card-price">33,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 15. Tinted Fluid 5 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Tinted Fluid</div>
-          <div class="card-title">브라이트 톤 리셋 플루이드</div>
-          <div class="card-specs">다크닝 방지 12시간 · 톤 균일도 94%</div>
-          <div class="card-price-row">
-            <div class="card-price">35,000원</div>
-            <span class="sample-tag">샘플동봉</span>
-          </div>
-          <div class="card-btn-group">
-            <div class="btn-wireframe">장바구니</div>
-            <div class="btn-wireframe dark">바로구매</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 16. Hybrid Setting 1 -->
-      <div class="product-card">
-        <div class="box-placeholder card-media">이미지</div>
-        <div class="card-body">
-          <div class="card-category">Hybrid Setting</div>
-          <div class="card-title">에어리 피니시 픽싱 미스트</div>
-          <div class="card-specs">초미세 안개 분사 · 밀착 픽싱 24시간</div>
+          <div class="card-category">BASE</div>
+          <div class="card-title">트리트먼트 컨실러</div>
+          <div class="card-specs">#국소커버 #세럼크림 #소프트내추럴</div>
           <div class="card-price-row">
             <div class="card-price">24,000원</div>
-            <span class="sample-tag">샘플동봉</span>
           </div>
           <div class="card-btn-group">
             <div class="btn-wireframe">장바구니</div>
@@ -790,17 +615,140 @@
           </div>
         </div>
       </div>
-
+      <!-- 08. BASE -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">BASE</div>
+          <div class="card-title">스킨 밸런스 세팅 파우더</div>
+          <div class="card-specs">#초미세프레스드 #유분밸런싱 #소프트블러</div>
+          <div class="card-price-row">
+            <div class="card-price">27,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 09. COLOR -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">COLOR</div>
+          <div class="card-title">립 앤 치크 밤</div>
+          <div class="card-specs">#멀티컬러 #소프트듀이 #원톤생기</div>
+          <div class="card-price-row">
+            <div class="card-price">28,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 10. COLOR -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">COLOR</div>
+          <div class="card-title">세럼 블러쉬</div>
+          <div class="card-specs">#워터리세럼젤 #프레시글로우 #투명혈색</div>
+          <div class="card-price-row">
+            <div class="card-price">24,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 11. COLOR -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">COLOR</div>
+          <div class="card-title">트리트먼트 립 틴트</div>
+          <div class="card-specs">#내추럴스테인 #워터젤세럼 #입술보습케어</div>
+          <div class="card-price-row">
+            <div class="card-price">22,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 12. COLOR -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">COLOR</div>
+          <div class="card-title">트리트먼트 브로우 젤</div>
+          <div class="card-specs">#데일리브로우 #세럼젤결정돈 #소프트고정</div>
+          <div class="card-price-row">
+            <div class="card-price">21,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 13. SET -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">SET</div>
+          <div class="card-title">시그니처 3-Step 모닝 루틴 세트</div>
+          <div class="card-specs">#시그니처루틴 #바쁜아침3분 #첫구매미니키트동봉</div>
+          <div class="card-price-row">
+            <div class="card-price">86,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 14. SET -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">SET</div>
+          <div class="card-title">터치업 듀오</div>
+          <div class="card-specs">#터치업듀오 #외출수정 #휴대필수</div>
+          <div class="card-price-row">
+            <div class="card-price">54,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
+      <!-- 15. SET -->
+      <div class="product-card">
+        <div class="box-placeholder card-media">이미지</div>
+        <div class="card-body">
+          <div class="card-category">SET</div>
+          <div class="card-title">스킨 디테일 듀오</div>
+          <div class="card-specs">#DETAIL #가벼운결정돈 #선택적정교보완</div>
+          <div class="card-price-row">
+            <div class="card-price">54,000원</div>
+          </div>
+          <div class="card-btn-group">
+            <div class="btn-wireframe">장바구니</div>
+            <div class="btn-wireframe dark">바로구매</div>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <!-- ============================================== -->
     <!-- 5. Pagination Bar -->
     <!-- ============================================== -->
-    <div class="pagination-bar">
-      <div class="page-btn active">1</div>
-      <div class="page-btn">2</div>
-      <div class="page-btn">다음 ></div>
-    </div>
 
 <!-- ============================================== -->
     <!-- 7. Global Footer (SEC-020-07) -->
